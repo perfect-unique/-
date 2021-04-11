@@ -1,42 +1,4 @@
-#北京二手房分析
-
-# '''1+11+111+1111....+11111111111'''
-#
-# def demo(v, n):
-#     assert type(n) == int and 0 < v < 10, 'v must be integer between 1 and 9'
-#     result, t = 0, 0
-#     for i in range(n):
-#         t = t*10 + v
-#         result += t
-#     return result
-#
-#
-# print(demo(1, 11))
-
-# import requests
-# from bs4 import BeautifulSoup
-# url = "https://www.umei.cc/meinvtupian/meinvxiezhen/224389.htm"
-# headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"}
-#
-# response = requests.get(url=url, headers=headers)
-# response.encoding = "utf-8"
-# responses = response.text
-# main_page = BeautifulSoup(responses, "html.parser")#解析器
-# divs = main_page.find("div", attrs={"class": "ImageBody"})
-# n = 1
-# for a in divs:
-#
-#     img = divs.find("img").get("src")
-#     f = open("tu_%s.jpg" % n, mode="wb")
-#     f.write(requests.get(img).content)
-#     print("已下载一张！！！")
-#     n += 1
-#     # text = divs.find("img").find_next("script").text
-#     #
-#     # print(text)
-#     # num = text.split(",")[2].strip("\"")
-#     # print(num)
-
+#北京二手房分析及可视化
 
 import pandas as pd
 import numpy as np
